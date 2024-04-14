@@ -1,30 +1,30 @@
-// const a = [1, 3, 5, 7, 9, 14];
-// const b = [2, 4, 9, 10, 15];
+const a = [1, 3, 5, 7, 9, 14];
+const b = [2, 4, 9, 10, 15];
 
-//Solución de MergeSort de manera iterativa
-// function mergeSort(a, b) {
-
-
-//     let arr = [];
-
-//     let i = 0, j = 0, k = 0;
+Solución de MergeSort de manera iterativa
+function mergeSort(a, b) {
 
 
-//     while(i < a.length && j < b.length) {
+    let arr = [];
 
-//         if(a[i] < b[j]) {
-//             arr[k++] = a[i++];
-//     }
-//     else {
-//         arr[k++] = b[j++];
-//     }
-// }
+    let i = 0, j = 0, k = 0;
+
+
+    while(i < a.length && j < b.length) {
+
+        if(a[i] < b[j]) {
+            arr[k++] = a[i++];
+    }
+    else {
+        arr[k++] = b[j++];
+    }
+}
     
-//     return arr;
+    return arr;
 
-// }
+}
 
-// console.log(mergeSort(a, b));
+console.log(mergeSort(a, b));
 
 function mergeSort(list) {
     if(list.length <= 1) {
